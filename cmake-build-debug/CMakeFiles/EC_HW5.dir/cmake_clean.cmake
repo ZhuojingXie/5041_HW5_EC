@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/EC_HW5.dir/NP.cpp.obj"
+  "CMakeFiles/EC_HW5.dir/PP.cpp.obj"
   "CMakeFiles/EC_HW5.dir/Run.cpp.obj"
   "CMakeFiles/EC_HW5.dir/SJF.cpp.obj"
+  "CMakeFiles/EC_HW5.dir/SRTF.cpp.obj"
   "CMakeFiles/EC_HW5.dir/Task.cpp.obj"
   "CMakeFiles/EC_HW5.dir/main.cpp.obj"
   "EC_HW5.exe"

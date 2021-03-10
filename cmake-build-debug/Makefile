@@ -169,6 +169,33 @@ NP.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_HW5.dir\build.make CMakeFiles/EC_HW5.dir/NP.cpp.s
 .PHONY : NP.cpp.s
 
+PP.obj: PP.cpp.obj
+
+.PHONY : PP.obj
+
+# target to build an object file
+PP.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_HW5.dir\build.make CMakeFiles/EC_HW5.dir/PP.cpp.obj
+.PHONY : PP.cpp.obj
+
+PP.i: PP.cpp.i
+
+.PHONY : PP.i
+
+# target to preprocess a source file
+PP.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_HW5.dir\build.make CMakeFiles/EC_HW5.dir/PP.cpp.i
+.PHONY : PP.cpp.i
+
+PP.s: PP.cpp.s
+
+.PHONY : PP.s
+
+# target to generate assembly for a file
+PP.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_HW5.dir\build.make CMakeFiles/EC_HW5.dir/PP.cpp.s
+.PHONY : PP.cpp.s
+
 Run.obj: Run.cpp.obj
 
 .PHONY : Run.obj
@@ -222,6 +249,33 @@ SJF.s: SJF.cpp.s
 SJF.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_HW5.dir\build.make CMakeFiles/EC_HW5.dir/SJF.cpp.s
 .PHONY : SJF.cpp.s
+
+SRTF.obj: SRTF.cpp.obj
+
+.PHONY : SRTF.obj
+
+# target to build an object file
+SRTF.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_HW5.dir\build.make CMakeFiles/EC_HW5.dir/SRTF.cpp.obj
+.PHONY : SRTF.cpp.obj
+
+SRTF.i: SRTF.cpp.i
+
+.PHONY : SRTF.i
+
+# target to preprocess a source file
+SRTF.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_HW5.dir\build.make CMakeFiles/EC_HW5.dir/SRTF.cpp.i
+.PHONY : SRTF.cpp.i
+
+SRTF.s: SRTF.cpp.s
+
+.PHONY : SRTF.s
+
+# target to generate assembly for a file
+SRTF.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_HW5.dir\build.make CMakeFiles/EC_HW5.dir/SRTF.cpp.s
+.PHONY : SRTF.cpp.s
 
 Task.obj: Task.cpp.obj
 
@@ -289,12 +343,18 @@ help:
 	@echo ... NP.obj
 	@echo ... NP.i
 	@echo ... NP.s
+	@echo ... PP.obj
+	@echo ... PP.i
+	@echo ... PP.s
 	@echo ... Run.obj
 	@echo ... Run.i
 	@echo ... Run.s
 	@echo ... SJF.obj
 	@echo ... SJF.i
 	@echo ... SJF.s
+	@echo ... SRTF.obj
+	@echo ... SRTF.i
+	@echo ... SRTF.s
 	@echo ... Task.obj
 	@echo ... Task.i
 	@echo ... Task.s

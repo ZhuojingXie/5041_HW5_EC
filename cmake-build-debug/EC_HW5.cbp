@@ -86,6 +86,12 @@
 		<Unit filename="C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/NP.h">
 			<Option target="EC_HW5"/>
 		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/PP.cpp">
+			<Option target="EC_HW5"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/PP.h">
+			<Option target="EC_HW5"/>
+		</Unit>
 		<Unit filename="C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/Run.cpp">
 			<Option target="EC_HW5"/>
 		</Unit>
@@ -96,6 +102,12 @@
 			<Option target="EC_HW5"/>
 		</Unit>
 		<Unit filename="C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/SJF.h">
+			<Option target="EC_HW5"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/SRTF.cpp">
+			<Option target="EC_HW5"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/SRTF.h">
 			<Option target="EC_HW5"/>
 		</Unit>
 		<Unit filename="C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/Task.cpp">

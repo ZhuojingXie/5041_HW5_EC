@@ -5,6 +5,8 @@
 #include "Task.h"
 #include "SJF.h"
 #include "NP.h"
+#include "SRTF.h"
+#include "PP.h"
 
 using namespace std;
 
@@ -33,10 +35,20 @@ int main() {
 
     SJF sjf(jobList);
     sjf.run();
-    cout<<"====================NP===================\n\n";
 
+
+    cout<<"====================NP===================\n\n";
     NP np(jobList);
     np.run();
 
+
+    cout<<"====================SRTF===================\n\n";
+    SRTF srtf(jobList);
+    srtf.run();
+
+
+    cout<<"====================PP===================\n\n";
+    PP pp(jobList);
+    pp.run();
     return 0;
 }

@@ -20,6 +20,9 @@ public:
     bool isCompleted = false;
 
     Task(int processId, int arriveTime, int burstTime, int priority);
+    Task();
+    Task &operator=(const Task &rhs);
+
     //todo big 4?
 };
 
