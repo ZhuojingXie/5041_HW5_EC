@@ -10,7 +10,7 @@
 
 class SJF: public Run {
 public:
-    SJF(std::vector<Task> &jobList);
+    explicit SJF(std::vector<Task> &jobList);
 
     void run();
 };

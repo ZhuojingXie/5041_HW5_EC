@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/NP.cpp">
+			<Option target="EC_HW5"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/NP.h">
+			<Option target="EC_HW5"/>
+		</Unit>
 		<Unit filename="C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/Run.cpp">
 			<Option target="EC_HW5"/>
 		</Unit>

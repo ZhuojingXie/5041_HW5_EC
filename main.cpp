@@ -4,6 +4,7 @@
 #include <algorithm>
 #include "Task.h"
 #include "SJF.h"
+#include "NP.h"
 
 using namespace std;
 
@@ -12,7 +13,7 @@ int main() {
     Task task2(1,10,20,3);
     Task task3(2,10,10,5);
     Task task4(3,15,3,2);
-    Task task5(4,20,35,1);
+    Task task5(4,20,30,1);
     Task task6(5,25,5,4);
 
 //    Task task1(0,0,5,3);
@@ -32,6 +33,10 @@ int main() {
 
     SJF sjf(jobList);
     sjf.run();
+    cout<<"====================NP===================\n\n";
+
+    NP np(jobList);
+    np.run();
 
     return 0;
 }

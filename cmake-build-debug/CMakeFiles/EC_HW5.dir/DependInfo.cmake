@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/NP.cpp" "C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/cmake-build-debug/CMakeFiles/EC_HW5.dir/NP.cpp.obj"
   "C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/Run.cpp" "C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/cmake-build-debug/CMakeFiles/EC_HW5.dir/Run.cpp.obj"
   "C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/SJF.cpp" "C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/cmake-build-debug/CMakeFiles/EC_HW5.dir/SJF.cpp.obj"
   "C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/Task.cpp" "C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/cmake-build-debug/CMakeFiles/EC_HW5.dir/Task.cpp.obj"

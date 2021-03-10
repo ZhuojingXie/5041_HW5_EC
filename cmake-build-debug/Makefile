@@ -142,6 +142,33 @@ EC_HW5/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_HW5.dir\build.make CMakeFiles/EC_HW5.dir/build
 .PHONY : EC_HW5/fast
 
+NP.obj: NP.cpp.obj
+
+.PHONY : NP.obj
+
+# target to build an object file
+NP.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_HW5.dir\build.make CMakeFiles/EC_HW5.dir/NP.cpp.obj
+.PHONY : NP.cpp.obj
+
+NP.i: NP.cpp.i
+
+.PHONY : NP.i
+
+# target to preprocess a source file
+NP.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_HW5.dir\build.make CMakeFiles/EC_HW5.dir/NP.cpp.i
+.PHONY : NP.cpp.i
+
+NP.s: NP.cpp.s
+
+.PHONY : NP.s
+
+# target to generate assembly for a file
+NP.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_HW5.dir\build.make CMakeFiles/EC_HW5.dir/NP.cpp.s
+.PHONY : NP.cpp.s
+
 Run.obj: Run.cpp.obj
 
 .PHONY : Run.obj
@@ -259,6 +286,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... EC_HW5
+	@echo ... NP.obj
+	@echo ... NP.i
+	@echo ... NP.s
 	@echo ... Run.obj
 	@echo ... Run.i
 	@echo ... Run.s
