@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/main.cpp
+iostream
+-
+iomanip
+-
+vector
+-
+algorithm
+-
+
