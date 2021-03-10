@@ -12,6 +12,14 @@ using namespace std;
 
 Run::Run(std::vector<Task>& jobList) {
     this->jobList = jobList;
+    sort(this->jobList.begin(),this->jobList.end(),
+         [](Task const &a, Task const &b)
+         {
+             return a.arriveTime<b.arriveTime;
+         });
+    //sort the job list based on arriving time;
+
+
 }
 
 void Run::activateTask(int ctime) {

@@ -14,13 +14,6 @@ using namespace std;
 void SJF::run() {
     int ctime = 0;
     int idleTime =0;
-    //sort the job list based on arriving time;
-
-    sort(jobList.begin(),jobList.end(),
-         [](Task const &a, Task const &b)
-         {
-             return a.arriveTime<b.arriveTime;
-         });
 
     vector<Task> waitingList;
     while(!jobList.empty() || !waitingList.empty()){
