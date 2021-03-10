@@ -142,6 +142,87 @@ EC_HW5/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_HW5.dir\build.make CMakeFiles/EC_HW5.dir/build
 .PHONY : EC_HW5/fast
 
+Run.obj: Run.cpp.obj
+
+.PHONY : Run.obj
+
+# target to build an object file
+Run.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_HW5.dir\build.make CMakeFiles/EC_HW5.dir/Run.cpp.obj
+.PHONY : Run.cpp.obj
+
+Run.i: Run.cpp.i
+
+.PHONY : Run.i
+
+# target to preprocess a source file
+Run.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_HW5.dir\build.make CMakeFiles/EC_HW5.dir/Run.cpp.i
+.PHONY : Run.cpp.i
+
+Run.s: Run.cpp.s
+
+.PHONY : Run.s
+
+# target to generate assembly for a file
+Run.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_HW5.dir\build.make CMakeFiles/EC_HW5.dir/Run.cpp.s
+.PHONY : Run.cpp.s
+
+SJF.obj: SJF.cpp.obj
+
+.PHONY : SJF.obj
+
+# target to build an object file
+SJF.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_HW5.dir\build.make CMakeFiles/EC_HW5.dir/SJF.cpp.obj
+.PHONY : SJF.cpp.obj
+
+SJF.i: SJF.cpp.i
+
+.PHONY : SJF.i
+
+# target to preprocess a source file
+SJF.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_HW5.dir\build.make CMakeFiles/EC_HW5.dir/SJF.cpp.i
+.PHONY : SJF.cpp.i
+
+SJF.s: SJF.cpp.s
+
+.PHONY : SJF.s
+
+# target to generate assembly for a file
+SJF.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_HW5.dir\build.make CMakeFiles/EC_HW5.dir/SJF.cpp.s
+.PHONY : SJF.cpp.s
+
+Task.obj: Task.cpp.obj
+
+.PHONY : Task.obj
+
+# target to build an object file
+Task.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_HW5.dir\build.make CMakeFiles/EC_HW5.dir/Task.cpp.obj
+.PHONY : Task.cpp.obj
+
+Task.i: Task.cpp.i
+
+.PHONY : Task.i
+
+# target to preprocess a source file
+Task.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_HW5.dir\build.make CMakeFiles/EC_HW5.dir/Task.cpp.i
+.PHONY : Task.cpp.i
+
+Task.s: Task.cpp.s
+
+.PHONY : Task.s
+
+# target to generate assembly for a file
+Task.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_HW5.dir\build.make CMakeFiles/EC_HW5.dir/Task.cpp.s
+.PHONY : Task.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -178,6 +259,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... EC_HW5
+	@echo ... Run.obj
+	@echo ... Run.i
+	@echo ... Run.s
+	@echo ... SJF.obj
+	@echo ... SJF.i
+	@echo ... SJF.s
+	@echo ... Task.obj
+	@echo ... Task.i
+	@echo ... Task.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

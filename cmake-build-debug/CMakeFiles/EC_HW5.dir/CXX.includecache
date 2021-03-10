@@ -6,6 +6,18 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/Run.h
+vector
+-
+Task.h
+C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/Task.h
+
+C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/SJF.h
+Run.h
+C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/Run.h
+
+C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/Task.h
+
 C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/main.cpp
 iostream
 -
@@ -15,4 +27,8 @@ vector
 -
 algorithm
 -
+Task.h
+C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/Task.h
+SJF.h
+C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/SJF.h
 
