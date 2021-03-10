@@ -6,47 +6,27 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/NP.h
-Run.h
-C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/Run.h
-
-C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/PP.h
-Run.h
-C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/Run.h
-
 C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/Run.h
 vector
 -
 Task.h
 C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/Task.h
 
+C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/SJF.cpp
+SJF.h
 C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/SJF.h
-Run.h
-C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/Run.h
-
-C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/SRTF.h
-Run.h
-C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/Run.h
-
-C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/Task.h
-
-C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/main.cpp
-iostream
--
-iomanip
--
 vector
 -
 algorithm
 -
-Task.h
-C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/Task.h
-SJF.h
+iostream
+-
+iomanip
+-
+
 C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/SJF.h
-NP.h
-C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/NP.h
-SRTF.h
-C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/SRTF.h
-PP.h
-C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/PP.h
+Run.h
+C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/Run.h
+
+C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/Task.h
 
