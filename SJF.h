@@ -8,13 +8,12 @@
 
 #include "Run.h"
 
-class SJF: public Run {
+class SJF : public Run {
 public:
     explicit SJF(std::vector<Task> &jobList);
 
     void run();
 };
-
 
 
 #endif //EC_HW5_SJF_H

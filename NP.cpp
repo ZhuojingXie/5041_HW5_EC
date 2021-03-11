@@ -15,36 +15,35 @@ NP::NP(std::vector<Task> &jobList) : Run(jobList) {}
 
 void NP::run() {
     int ctime = 0;
-    int idleTime =0;
+    int idleTime = 0;
 
     vector<Task> waitingList;
-    while(!jobList.empty() || !waitingList.empty()){
+    while (!jobList.empty() || !waitingList.empty()) {
         activateTask(ctime);
-        for(auto job = jobList.begin(); job != jobList.end();){
-            if(job->isActive){
+        for (auto job = jobList.begin(); job != jobList.end();) {
+            if (job->isActive) {
                 waitingList.push_back(*job);
                 job = jobList.erase(job);
-            }else{
+            } else {
                 ++job;
             }
         }
 
-        sort(waitingList.begin(),waitingList.end(),
-             [](Task const &a, Task const &b)
-             {
-                 if(a.isActive && b.isActive){
-                     if(a.priority != b.priority)
-                        return a.priority<b.priority;
+        sort(waitingList.begin(), waitingList.end(),
+             [](Task const &a, Task const &b) {
+                 if (a.isActive && b.isActive) {
+                     if (a.priority != b.priority)
+                         return a.priority < b.priority;
                      else
-                         return a.processId<b.processId;
+                         return a.processId < b.processId;
                  }
                  return false;
              }
         );
 
-        if(!waitingList[0].isCompleted){
-            cout<<"Time "<<ctime<<" Process "<<waitingList[0].processId<<endl;
-            while(waitingList[0].remainingTime > 0){
+        if (!waitingList[0].isCompleted) {
+            cout << "Time " << ctime << " Process " << waitingList[0].processId << endl;
+            while (waitingList[0].remainingTime > 0) {
                 ctime++;
                 waitingList[0].remainingTime--;
             }
@@ -54,9 +53,9 @@ void NP::run() {
             waitingList[0].isCompleted = true;
             completeList.push_back(waitingList[0]);
             waitingList.erase(waitingList.begin());
-        }else{
-            cout<<"Time "<<ctime<<" Idle"<<endl;
-            while(!jobList[0].isActive){
+        } else {
+            cout << "Time " << ctime << " Idle" << endl;
+            while (!jobList[0].isActive) {
                 ctime++;
                 idleTime++;
                 activateTask(ctime);
@@ -64,6 +63,6 @@ void NP::run() {
         }
     }
 
-    cout<<setprecision(0)<<fixed<<"CPU Utilization: "<< (1 - ((double)idleTime)/(ctime))*100<<"%"<<endl;
+    cout << setprecision(0) << fixed << "CPU Utilization: " << (1 - ((double) idleTime) / (ctime)) * 100 << "%" << endl;
     print();
 }

@@ -8,7 +8,7 @@
 
 #include "Run.h"
 
-class NP: public Run {
+class NP : public Run {
 public:
     NP(std::vector<Task> &jobList);
 

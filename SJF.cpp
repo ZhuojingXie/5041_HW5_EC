@@ -13,33 +13,32 @@ using namespace std;
 
 void SJF::run() {
     int ctime = 0;
-    int idleTime =0;
+    int idleTime = 0;
 
     vector<Task> waitingList;
-    while(!jobList.empty() || !waitingList.empty()){
+    while (!jobList.empty() || !waitingList.empty()) {
         activateTask(ctime);
-        for(auto job = jobList.begin(); job != jobList.end();){
-            if(job->isActive){
+        for (auto job = jobList.begin(); job != jobList.end();) {
+            if (job->isActive) {
                 waitingList.push_back(*job);
                 job = jobList.erase(job);
-            }else{
+            } else {
                 ++job;
             }
         }
 
-        sort(waitingList.begin(),waitingList.end(),
-             [](Task const &a, Task const &b)
-             {
-                if(a.burstTime != b.burstTime)
-                    return a.burstTime<b.burstTime;
-                else
-                    return a.processId<b.processId;
+        sort(waitingList.begin(), waitingList.end(),
+             [](Task const &a, Task const &b) {
+                 if (a.burstTime != b.burstTime)
+                     return a.burstTime < b.burstTime;
+                 else
+                     return a.processId < b.processId;
              }
         );
 
-        if(!waitingList[0].isCompleted){
-            cout<<"Time "<<ctime<<" Process "<<waitingList[0].processId<<endl;
-            while(waitingList[0].remainingTime > 0){
+        if (!waitingList[0].isCompleted) {
+            cout << "Time " << ctime << " Process " << waitingList[0].processId << endl;
+            while (waitingList[0].remainingTime > 0) {
                 ctime++;
                 waitingList[0].remainingTime--;
             }
@@ -49,9 +48,9 @@ void SJF::run() {
             waitingList[0].isCompleted = true;
             completeList.push_back(waitingList[0]);
             waitingList.erase(waitingList.begin());
-        }else{
-            cout<<"Time "<<ctime<<" Idle"<<endl;
-            while(!jobList[0].isActive){
+        } else {
+            cout << "Time " << ctime << " Idle" << endl;
+            while (!jobList[0].isActive) {
                 ctime++;
                 idleTime++;
                 activateTask(ctime);
@@ -59,7 +58,7 @@ void SJF::run() {
         }
     }
 
-    cout<<setprecision(0)<<fixed<<"CPU Utilization: "<< (1 - ((double)idleTime)/(ctime))*100<<"%"<<endl;
+    cout << setprecision(0) << fixed << "CPU Utilization: " << (1 - ((double) idleTime) / (ctime)) * 100 << "%" << endl;
     print();
 }
 

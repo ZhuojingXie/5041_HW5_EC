@@ -16,13 +16,13 @@ PP::PP(std::vector<Task> &jobList) : Run(jobList) {}
 
 void PP::run() {
     int ctime = 0;
-    int idleTime =0;
+    int idleTime = 0;
 
     vector<Task> waitingList;
 
     Task prev;
 
-    while(!jobList.empty() || !waitingList.empty()) {
+    while (!jobList.empty() || !waitingList.empty()) {
         activateTask(ctime);
         for (auto job = jobList.begin(); job != jobList.end();) {
             if (job->isActive) {
@@ -33,34 +33,34 @@ void PP::run() {
             }
         }
 
-        sort(waitingList.begin(),waitingList.end(),[]
+        sort(waitingList.begin(), waitingList.end(), []
                      (const Task &a, const Task &b) {
-                 if(a.priority != b.priority)
-                     return a.priority<b.priority;
+                 if (a.priority != b.priority)
+                     return a.priority < b.priority;
                  else
-                     return a.processId<b.processId;
+                     return a.processId < b.processId;
              }
         );
 
-        if(!waitingList.empty()){
-            if(waitingList[0].processId != prev.processId){
-                cout<<"Time "<<ctime<<" Process "<<waitingList[0].processId<<endl;
+        if (!waitingList.empty()) {
+            if (waitingList[0].processId != prev.processId) {
+                cout << "Time " << ctime << " Process " << waitingList[0].processId << endl;
             }
             waitingList[0].remainingTime--;
-            prev =waitingList[0];
+            prev = waitingList[0];
             ++ctime;
-            if(waitingList[0].remainingTime == 0){
+            if (waitingList[0].remainingTime == 0) {
                 waitingList[0].isCompleted = true;
-                waitingList[0].terminationTime =ctime;
-                waitingList[0].turnAroundTime = ctime- waitingList[0].arriveTime;
+                waitingList[0].terminationTime = ctime;
+                waitingList[0].turnAroundTime = ctime - waitingList[0].arriveTime;
                 waitingList[0].waitTime = waitingList[0].turnAroundTime - waitingList[0].burstTime;
                 waitingList[0].isActive = false;
                 completeList.push_back(waitingList[0]);
                 waitingList.erase(waitingList.begin());
             }
-        }else{
-            cout<<"Time "<<ctime<<" Idle"<<endl;
-            while(!jobList[0].isActive){
+        } else {
+            cout << "Time " << ctime << " Idle" << endl;
+            while (!jobList[0].isActive) {
                 ctime++;
                 idleTime++;
                 activateTask(ctime);
@@ -68,7 +68,7 @@ void PP::run() {
         }
     }
 
-    cout<<setprecision(0)<<fixed<<"CPU Utilization: "<< (1 - ((double)idleTime)/(ctime))*100<<"%"<<endl;
+    cout << setprecision(0) << fixed << "CPU Utilization: " << (1 - ((double) idleTime) / (ctime)) * 100 << "%" << endl;
     print();
 
 }

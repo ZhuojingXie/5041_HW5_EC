@@ -11,7 +11,7 @@ public:
     int processId = -1;
     int arriveTime = -1;
     int burstTime = -1;
-    int priority =-1;
+    int priority = -1;
     int remainingTime = -1;
     int terminationTime = -1;
     int turnAroundTime = -1;
@@ -20,7 +20,9 @@ public:
     bool isCompleted = false;
 
     Task(int processId, int arriveTime, int burstTime, int priority);
+
     Task();
+
     Task &operator=(const Task &rhs);
 
     //todo big 4?

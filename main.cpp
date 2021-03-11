@@ -12,25 +12,23 @@
 
 using namespace std;
 
-vector<vector<int>> fileReader (){
+vector<vector<int>> fileReader() {
     string filepath = "input.txt";
     vector<vector<int>> res;
-
-
 
     string buff;
     ifstream inFile;
     inFile.open(filepath);
-    if(!inFile)
+    if (!inFile)
         throw runtime_error("File Not Found");
 
-    if(inFile){
-        while(getline(inFile,buff)){
+    if (inFile) {
+        while (getline(inFile, buff)) {
             istringstream iss(buff);
             vector<int> process;
-            for(int n =0;n<4;n++){
+            for (int n = 0; n < 4; n++) {
                 int val;
-                iss>>val;
+                iss >> val;
                 process.push_back(val);
             }
             res.push_back(process);
@@ -81,26 +79,26 @@ int main() {
 
     vector<vector<int>> list = fileReader();
     vector<Task> jobList;
-    for(auto process:list){
-        Task task(process[0],process[1],process[2],process[3]);
+    for (auto process:list) {
+        Task task(process[0], process[1], process[2], process[3]);
         jobList.push_back(task);
     }
 
-    cout<<"\n\n====================SJF===================\n";
+    cout << "\n\n====================SJF===================\n";
     SJF sjf(jobList);
     sjf.run();
 
 
-    cout<<"\n\n====================SRTF===================\n";
+    cout << "\n\n====================SRTF===================\n";
     SRTF srtf(jobList);
     srtf.run();
 
 
-    cout<<"\n\n====================NP===================\n";
+    cout << "\n\n====================NP===================\n";
     NP np(jobList);
     np.run();
 
-    cout<<"\n\n====================PP===================\n";
+    cout << "\n\n====================PP===================\n";
     PP pp(jobList);
     pp.run();
 

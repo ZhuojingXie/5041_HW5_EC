@@ -8,9 +8,10 @@
 
 #include "Run.h"
 
-class PP : public Run{
+class PP : public Run {
 public:
     PP(std::vector<Task> &jobList);
+
     void run();
 
 };

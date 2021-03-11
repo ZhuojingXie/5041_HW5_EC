@@ -8,9 +8,10 @@
 
 #include "Run.h"
 
-class SRTF: public Run {
+class SRTF : public Run {
 public:
     SRTF(std::vector<Task> &jobList);
+
     void run();
 
 };

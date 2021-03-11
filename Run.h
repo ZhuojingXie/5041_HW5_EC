@@ -13,8 +13,10 @@
  */
 class Run {
 public:
-    Run(std::vector<Task>& jobList);
+    Run(std::vector<Task> &jobList);
+
     void activateTask(int ctime);
+
     void print();
 
 protected:

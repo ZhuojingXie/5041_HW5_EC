@@ -10,12 +10,11 @@
 using namespace std;
 
 
-Run::Run(std::vector<Task>& jobList) {
+Run::Run(std::vector<Task> &jobList) {
     this->jobList = jobList;
-    sort(this->jobList.begin(),this->jobList.end(),
-         [](Task const &a, Task const &b)
-         {
-             return a.arriveTime<b.arriveTime;
+    sort(this->jobList.begin(), this->jobList.end(),
+         [](Task const &a, Task const &b) {
+             return a.arriveTime < b.arriveTime;
          });
     //sort the job list based on arriving time;
 
@@ -23,8 +22,8 @@ Run::Run(std::vector<Task>& jobList) {
 }
 
 void Run::activateTask(int ctime) {
-    for(auto &job:jobList){
-        if(job.arriveTime<= ctime)
+    for (auto &job:jobList) {
+        if (job.arriveTime <= ctime)
             job.isActive = true;
     }
 }
@@ -33,11 +32,11 @@ void Run::print() {
     int waitTime = 0;
     int count = 0;
     int worstTime = 0;
-    for(auto &job:this->completeList){
+    for (auto &job:this->completeList) {
         waitTime += job.waitTime;
         count++;
-        worstTime = max(worstTime,job.waitTime);
+        worstTime = max(worstTime, job.waitTime);
     }
-    cout<<setprecision(2)<<fixed<<"Average waiting time: "<<(double)waitTime/count<<endl;
-    cout<<"Worst-case waiting time: "<<worstTime<<endl;
+    cout << setprecision(2) << fixed << "Average waiting time: " << (double) waitTime / count << endl;
+    cout << "Worst-case waiting time: " << worstTime << endl;
 }
