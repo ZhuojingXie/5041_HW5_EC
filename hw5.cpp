@@ -43,6 +43,9 @@ vector<vector<int>> fileReader(const string& filename) {
     if (inFile) {
         while (getline(inFile, buff)) {
             istringstream iss(buff);
+            if(buff.empty()){
+                break;
+            }
             vector<int> process;
             for (int n = 0; n < 4; n++) {
                 int val;
@@ -58,13 +61,44 @@ vector<vector<int>> fileReader(const string& filename) {
 }
 
 
-int main(int argc, char* argv[]) {
+//int main(int argc, char* argv[]) {
+//
+//
+//    string filename = argv[1];
+//    string cmd =  argv[2];
+//
+//    vector<vector<int>> list = fileReader(filename);
+//    vector<Task> jobList;
+//    for (auto process:list) {
+//        Task task(process[0], process[1], process[2], process[3]);
+//        jobList.push_back(task);
+//    }
+//
+//
+//    if(cmd == "SJF"){
+//    SJF sjf(jobList);
+//    sjf.run();
+//    }
+//    else if(cmd == "SRTF") {
+//        SRTF srtf(jobList);
+//        srtf.run();
+//    }
+//    else if(cmd == "NP") {
+//        NP np(jobList);
+//        np.run();
+//    }
+//    else if(cmd == "PP") {
+//        PP pp(jobList);
+//        pp.run();
+//    }else{
+//        cout<<"Invalid instruction\n";
+//    }
+//
+//    return 0;
+//}
 
-
-    string filename = argv[1];
-    string cmd =  argv[2];
-
-    vector<vector<int>> list = fileReader(filename);
+int main() {
+    vector<vector<int>> list = fileReader("../input.txt");
     vector<Task> jobList;
     for (auto process:list) {
         Task task(process[0], process[1], process[2], process[3]);
@@ -72,24 +106,22 @@ int main(int argc, char* argv[]) {
     }
 
 
-    if(cmd == "SJF"){
+    cout << "\n\n====================SJF===================\n";
     SJF sjf(jobList);
     sjf.run();
-    }
-    else if(cmd == "SRTF") {
-        SRTF srtf(jobList);
-        srtf.run();
-    }
-    else if(cmd == "NP") {
-        NP np(jobList);
-        np.run();
-    }
-    else if(cmd == "PP") {
-        PP pp(jobList);
-        pp.run();
-    }else{
-        cout<<"Invalid instruction\n";
-    }
 
-    return 0;
+
+    cout << "\n\n====================SRTF===================\n";
+    SRTF srtf(jobList);
+    srtf.run();
+
+
+    cout << "\n\n====================NP===================\n";
+    NP np(jobList);
+    np.run();
+
+    cout << "\n\n====================PP===================\n";
+    PP pp(jobList);
+    pp.run();
+
 }

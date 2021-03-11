@@ -18,6 +18,13 @@ void SJF::run() {
     vector<Task> waitingList;
     while (!jobList.empty() || !waitingList.empty()) {
         activateTask(ctime);
+        if(waitingList.empty() && !jobList[0].isActive)
+            cout << "Time " << ctime << " Idle" << endl;
+        while(!jobList[0].isActive){
+            ctime++;
+            idleTime++;
+            activateTask(ctime);
+        }
         for (auto job = jobList.begin(); job != jobList.end();) {
             if (job->isActive) {
                 waitingList.push_back(*job);
