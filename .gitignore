@@ -4,3 +4,11 @@
 /cmake-build-debug/CMakeFiles/EC_HW5.dir/NP.cpp.obj
 /cmake-build-debug/CMakeFiles/EC_HW5.dir/PP.cpp.obj
 /cmake-build-debug/CMakeFiles/EC_HW5.dir/SRTF.cpp.obj
+/cmake-build-debug/
+/cmake-build-debug/CMakeFiles/*
+/cmake-build-debug/cmake_install.cmake
+/cmake-build-debug/CMakeCache.txt
+/cmake-build-debug/EC_HW5.cbp
+/cmake-build-debug/EC_HW5.exe
+/cmake-build-debug/input.txt
+/cmake-build-debug/Makefile
