@@ -38,7 +38,7 @@ void SRTF::run() {
                  if(a.remainingTime != b.remainingTime)
                      return a.remainingTime<b.remainingTime;
                  else
-                     return a.arriveTime<b.arriveTime;
+                     return a.processId<b.processId;
             }
         );
 

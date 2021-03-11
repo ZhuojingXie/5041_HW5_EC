@@ -38,7 +38,7 @@ void PP::run() {
                  if(a.priority != b.priority)
                      return a.priority<b.priority;
                  else
-                     return a.arriveTime<b.arriveTime;
+                     return a.processId<b.processId;
              }
         );
 

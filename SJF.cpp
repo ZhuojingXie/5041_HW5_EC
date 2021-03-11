@@ -30,10 +30,10 @@ void SJF::run() {
         sort(waitingList.begin(),waitingList.end(),
              [](Task const &a, Task const &b)
              {
-                if(a.isActive != b.isActive)
+                if(a.burstTime != b.burstTime)
                     return a.burstTime<b.burstTime;
                 else
-                    return a.arriveTime<b.arriveTime;
+                    return a.processId<b.processId;
              }
         );
 

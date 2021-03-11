@@ -12,7 +12,7 @@
 
 using namespace std;
 
-vector<vector<int>> filebuff (){
+vector<vector<int>> fileReader (){
     string filepath = "input.txt";
     vector<vector<int>> res;
 
@@ -79,26 +79,28 @@ int main() {
     pp.run();
      */
 
-    vector<vector<int>> list = filebuff();
+    vector<vector<int>> list = fileReader();
     vector<Task> jobList;
     for(auto process:list){
         Task task(process[0],process[1],process[2],process[3]);
         jobList.push_back(task);
     }
 
-    cout<<"====================SFJ===================\n\n";
+    cout<<"\n\n====================SJF===================\n";
     SJF sjf(jobList);
     sjf.run();
 
-    cout<<"====================NP===================\n\n";
-    NP np(jobList);
-    np.run();
 
-    cout<<"====================SRTF===================\n\n";
+    cout<<"\n\n====================SRTF===================\n";
     SRTF srtf(jobList);
     srtf.run();
 
-    cout<<"====================PP===================\n\n";
+
+    cout<<"\n\n====================NP===================\n";
+    NP np(jobList);
+    np.run();
+
+    cout<<"\n\n====================PP===================\n";
     PP pp(jobList);
     pp.run();
 
