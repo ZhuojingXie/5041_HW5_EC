@@ -43,16 +43,15 @@ vector<vector<int>> fileReader(const string& filename) {
     if (inFile) {
         while (getline(inFile, buff)) {
             istringstream iss(buff);
-            if(buff.empty()){
-                break;
+            if(!buff.empty()) {
+                vector<int> process;
+                for (int n = 0; n < 4; n++) {
+                    int val;
+                    iss >> val;
+                    process.push_back(val);
+                }
+                res.push_back(process);
             }
-            vector<int> process;
-            for (int n = 0; n < 4; n++) {
-                int val;
-                iss >> val;
-                process.push_back(val);
-            }
-            res.push_back(process);
         }
     }
 
