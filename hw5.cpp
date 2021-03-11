@@ -11,6 +11,22 @@
 #include "PP.h"
 
 
+/**
+ * Team member
+ * Xie, Zhuojing
+ * Liao, Jun
+ * Lu, Menglin
+ * 
+ * For the input file, the following assumptions applied:
+ * o    Each line consists of four integers.
+ * o    The process id is unique for each line (and is greater than zero).
+ * o    The arrival time is greater than or equal to zero.
+ * o    The burst time is strictly greater than zero.
+ * o    The priority is greater than or equal to zero.
+ *
+ * For the command line, assumption all input are Uppercase
+ *
+ */
 
 using namespace std;
 
