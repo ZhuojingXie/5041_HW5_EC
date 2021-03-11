@@ -20,7 +20,7 @@ void SJF::run() {
         activateTask(ctime);
         if(waitingList.empty() && !jobList[0].isActive)
             cout << "Time " << ctime << " Idle" << endl;
-        while(!jobList[0].isActive){
+        while(waitingList.empty() &&!jobList[0].isActive){
             ctime++;
             idleTime++;
             activateTask(ctime);
