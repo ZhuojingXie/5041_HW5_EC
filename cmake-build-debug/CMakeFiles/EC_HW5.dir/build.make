@@ -76,18 +76,18 @@ include CMakeFiles/EC_HW5.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/EC_HW5.dir/flags.make
 
-CMakeFiles/EC_HW5.dir/main.cpp.obj: CMakeFiles/EC_HW5.dir/flags.make
-CMakeFiles/EC_HW5.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Admin\Desktop\SU\5041 Operating System Principles I\HW\EC_HW5\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/EC_HW5.dir/main.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EC_HW5.dir\main.cpp.obj -c "C:\Users\Admin\Desktop\SU\5041 Operating System Principles I\HW\EC_HW5\main.cpp"
+CMakeFiles/EC_HW5.dir/hw5.cpp.obj: CMakeFiles/EC_HW5.dir/flags.make
+CMakeFiles/EC_HW5.dir/hw5.cpp.obj: ../hw5.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Admin\Desktop\SU\5041 Operating System Principles I\HW\EC_HW5\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/EC_HW5.dir/hw5.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EC_HW5.dir\hw5.cpp.obj -c "C:\Users\Admin\Desktop\SU\5041 Operating System Principles I\HW\EC_HW5\hw5.cpp"
 
-CMakeFiles/EC_HW5.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EC_HW5.dir/main.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Admin\Desktop\SU\5041 Operating System Principles I\HW\EC_HW5\main.cpp" > CMakeFiles\EC_HW5.dir\main.cpp.i
+CMakeFiles/EC_HW5.dir/hw5.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EC_HW5.dir/hw5.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Admin\Desktop\SU\5041 Operating System Principles I\HW\EC_HW5\hw5.cpp" > CMakeFiles\EC_HW5.dir\hw5.cpp.i
 
-CMakeFiles/EC_HW5.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EC_HW5.dir/main.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Admin\Desktop\SU\5041 Operating System Principles I\HW\EC_HW5\main.cpp" -o CMakeFiles\EC_HW5.dir\main.cpp.s
+CMakeFiles/EC_HW5.dir/hw5.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EC_HW5.dir/hw5.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Admin\Desktop\SU\5041 Operating System Principles I\HW\EC_HW5\hw5.cpp" -o CMakeFiles\EC_HW5.dir\hw5.cpp.s
 
 CMakeFiles/EC_HW5.dir/Run.cpp.obj: CMakeFiles/EC_HW5.dir/flags.make
 CMakeFiles/EC_HW5.dir/Run.cpp.obj: ../Run.cpp
@@ -169,7 +169,7 @@ CMakeFiles/EC_HW5.dir/PP.cpp.s: cmake_force
 
 # Object files for target EC_HW5
 EC_HW5_OBJECTS = \
-"CMakeFiles/EC_HW5.dir/main.cpp.obj" \
+"CMakeFiles/EC_HW5.dir/hw5.cpp.obj" \
 "CMakeFiles/EC_HW5.dir/Run.cpp.obj" \
 "CMakeFiles/EC_HW5.dir/Task.cpp.obj" \
 "CMakeFiles/EC_HW5.dir/SJF.cpp.obj" \
@@ -180,7 +180,7 @@ EC_HW5_OBJECTS = \
 # External object files for target EC_HW5
 EC_HW5_EXTERNAL_OBJECTS =
 
-EC_HW5.exe: CMakeFiles/EC_HW5.dir/main.cpp.obj
+EC_HW5.exe: CMakeFiles/EC_HW5.dir/hw5.cpp.obj
 EC_HW5.exe: CMakeFiles/EC_HW5.dir/Run.cpp.obj
 EC_HW5.exe: CMakeFiles/EC_HW5.dir/Task.cpp.obj
 EC_HW5.exe: CMakeFiles/EC_HW5.dir/SJF.cpp.obj

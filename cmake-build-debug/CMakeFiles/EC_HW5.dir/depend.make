@@ -28,11 +28,11 @@ CMakeFiles/EC_HW5.dir/SRTF.cpp.obj: ../Task.h
 CMakeFiles/EC_HW5.dir/Task.cpp.obj: ../Task.cpp
 CMakeFiles/EC_HW5.dir/Task.cpp.obj: ../Task.h
 
-CMakeFiles/EC_HW5.dir/main.cpp.obj: ../NP.h
-CMakeFiles/EC_HW5.dir/main.cpp.obj: ../PP.h
-CMakeFiles/EC_HW5.dir/main.cpp.obj: ../Run.h
-CMakeFiles/EC_HW5.dir/main.cpp.obj: ../SJF.h
-CMakeFiles/EC_HW5.dir/main.cpp.obj: ../SRTF.h
-CMakeFiles/EC_HW5.dir/main.cpp.obj: ../Task.h
-CMakeFiles/EC_HW5.dir/main.cpp.obj: ../main.cpp
+CMakeFiles/EC_HW5.dir/hw5.cpp.obj: ../NP.h
+CMakeFiles/EC_HW5.dir/hw5.cpp.obj: ../PP.h
+CMakeFiles/EC_HW5.dir/hw5.cpp.obj: ../Run.h
+CMakeFiles/EC_HW5.dir/hw5.cpp.obj: ../SJF.h
+CMakeFiles/EC_HW5.dir/hw5.cpp.obj: ../SRTF.h
+CMakeFiles/EC_HW5.dir/hw5.cpp.obj: ../Task.h
+CMakeFiles/EC_HW5.dir/hw5.cpp.obj: ../hw5.cpp
 

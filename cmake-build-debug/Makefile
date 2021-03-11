@@ -304,32 +304,32 @@ Task.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_HW5.dir\build.make CMakeFiles/EC_HW5.dir/Task.cpp.s
 .PHONY : Task.cpp.s
 
-main.obj: main.cpp.obj
+hw5.obj: hw5.cpp.obj
 
-.PHONY : main.obj
+.PHONY : hw5.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_HW5.dir\build.make CMakeFiles/EC_HW5.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+hw5.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_HW5.dir\build.make CMakeFiles/EC_HW5.dir/hw5.cpp.obj
+.PHONY : hw5.cpp.obj
 
-main.i: main.cpp.i
+hw5.i: hw5.cpp.i
 
-.PHONY : main.i
+.PHONY : hw5.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_HW5.dir\build.make CMakeFiles/EC_HW5.dir/main.cpp.i
-.PHONY : main.cpp.i
+hw5.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_HW5.dir\build.make CMakeFiles/EC_HW5.dir/hw5.cpp.i
+.PHONY : hw5.cpp.i
 
-main.s: main.cpp.s
+hw5.s: hw5.cpp.s
 
-.PHONY : main.s
+.PHONY : hw5.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_HW5.dir\build.make CMakeFiles/EC_HW5.dir/main.cpp.s
-.PHONY : main.cpp.s
+hw5.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_HW5.dir\build.make CMakeFiles/EC_HW5.dir/hw5.cpp.s
+.PHONY : hw5.cpp.s
 
 # Help Target
 help:
@@ -358,9 +358,9 @@ help:
 	@echo ... Task.obj
 	@echo ... Task.i
 	@echo ... Task.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... hw5.obj
+	@echo ... hw5.i
+	@echo ... hw5.s
 .PHONY : help
 
 

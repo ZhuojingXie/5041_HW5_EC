@@ -10,7 +10,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/SJF.cpp" "C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/cmake-build-debug/CMakeFiles/EC_HW5.dir/SJF.cpp.obj"
   "C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/SRTF.cpp" "C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/cmake-build-debug/CMakeFiles/EC_HW5.dir/SRTF.cpp.obj"
   "C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/Task.cpp" "C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/cmake-build-debug/CMakeFiles/EC_HW5.dir/Task.cpp.obj"
-  "C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/main.cpp" "C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/cmake-build-debug/CMakeFiles/EC_HW5.dir/main.cpp.obj"
+  "C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/hw5.cpp" "C:/Users/Admin/Desktop/SU/5041 Operating System Principles I/HW/EC_HW5/cmake-build-debug/CMakeFiles/EC_HW5.dir/hw5.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
